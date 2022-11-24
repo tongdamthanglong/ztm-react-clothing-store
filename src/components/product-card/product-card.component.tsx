@@ -1,18 +1,18 @@
-import { FC } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { FC } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { selectCartItems } from "../../store/cart/cart.selector";
-import { addItemToCart } from "../../store/cart/cart.action";
-import { CategoryItem } from "../../store/categories/category.types";
+import { selectCartItems } from '../../store/cart/cart.selector';
+import { addItemToCart } from '../../store/cart/cart.action';
+import { CategoryItem } from '../../store/categories/category.types';
 
-import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 import {
   ProductCartContainer,
   Footer,
   Name,
   Price,
-} from "./product-card.styles";
+} from './product-card.styles';
 
 type ProductCardProps = {
   product: CategoryItem;
